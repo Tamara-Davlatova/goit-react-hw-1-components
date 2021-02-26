@@ -1,0 +1,38 @@
+.friends {
+  width: 320px;
+  padding: 10px;
+}
+.item {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  border: 1px solid grey;
+}
+
+.status {
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.avatar {
+  margin: 10px;
+}
+
+.name {
+  margin: 10px;
+  font-size: 27px;
+  font-weight: 700;
+}
+
+.online {
+  composes: status;
+  background-color: green;
+}
+
+.offline {
+  composes: status;
+  background-color: red;
+}
